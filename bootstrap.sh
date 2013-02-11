@@ -1,6 +1,7 @@
+DOTFILES_LINK="${HOME}/.dotfiles"
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [ ${DOTFILES_DIR} = "${HOME}/.dotfiles" ]; then
+if [ ${DOTFILES_DIR} = "${DOTFILES_LINK}" ]; then
 
 	# determine project directory by reading .dotfiles symlink
 	PROJECT_DIR=`readlink $DOTFILES_DIR`
@@ -32,15 +33,15 @@ function safe_link() {
 }
 
 # symlink .bash* files
-safe_link "${HOME}/.bashrc" "${DOTFILES_DIR}/.bashrc"
-safe_link "${HOME}/.bash_profile" "${DOTFILES_DIR}/.bash_profile"
+safe_link "${HOME}/.bashrc" "${DOTFILES_LINK}/.bashrc"
+safe_link "${HOME}/.bash_profile" "${DOTFILES_LINK}/.bash_profile"
 
 # stash any old copies of .profile
 # .profile is only used for backwards compatibility anyway
 safe_remove "${HOME}/.profile"
 
 # symlink dotfiles directory to ~/.dotfiles
-safe_link "${HOME}/.dotfiles" "${DOTFILES_DIR}"
+safe_link "${DOTFILES_LINK}" "${DOTFILES_DIR}"
 
 source ~/.bash_profile
 
