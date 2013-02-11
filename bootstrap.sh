@@ -35,6 +35,8 @@ function safe_link() {
 # symlink .bash* files
 safe_link "${HOME}/.bashrc" "${DOTFILES_LINK}/.bashrc"
 safe_link "${HOME}/.bash_profile" "${DOTFILES_LINK}/.bash_profile"
+safe_link "${HOME}/.inputrc" "${DOTFILES_LINK}/.inputrc"
+safe_link "${HOME}/.dotfiles" "${DOTFILES_LINK}"
 
 # stash any old copies of .profile
 # .profile is only used for backwards compatibility anyway
