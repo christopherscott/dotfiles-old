@@ -73,6 +73,9 @@ defaults write com.apple.dock showhidden -bool true
 # Set Safari’s home page to `about:blank` for faster loading
 defaults write com.apple.Safari HomePage -string "about:blank"
 
+# use the flat black dock
+defaults write com.apple.dock no-glass -boolean YES
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
