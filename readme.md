@@ -3,7 +3,7 @@ Christopher Scott's dotfiles
 
 Everyone should publish their dotfiles: <http://dotfiles.github.com/>
 
-Thanks to [@cowboy](https://github.com/cowboy/dotfiles) and [@mathiasbynens](https://github.com/mathiasbynens/dotfiles).
+Thanks to [@cowboy](https://github.com/cowboy/dotfiles) and [@mathiasbynens](https://github.com/mathiasbynens/dotfiles), this was mainly inspired by them!
 
 Custom Prompt
 -------------
@@ -30,7 +30,9 @@ TODO:
 -----
 
 - standardize on color aliases/variables
-- 
+- better comments/documenation
+- better screenshots, explanation of features
+
 
 Installation
 ------------
