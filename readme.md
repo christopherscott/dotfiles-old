@@ -5,9 +5,32 @@ Everyone should publish their dotfiles: <http://dotfiles.github.com/>
 
 Thanks to [@cowboy](https://github.com/cowboy/dotfiles) and [@mathiasbynens](https://github.com/mathiasbynens/dotfiles).
 
+Custom Prompt
+-------------
+
+- username @ hostname
+- current working directory
+- last error code (if available)
+- git branch/status
+- svn rev/last-change-rev
+- python virtual env
+- overridable prompt symbol 
+
+
+Other goodies
+-------------
+
 - customized for all OSX environment
-- includes boostrap.sh to setup
-- incldues osx.sh for fresh installs
+- boostrap.sh to link/setup confs
+- osx.sh for nice osx preferences
+- custom iterm color scheme
+- [Z](https://github.com/rupa/z) because it rocks!
+
+TODO:
+-----
+
+- standardize on color aliases/variables
+- 
 
 Installation
 ------------
