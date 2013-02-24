@@ -17,3 +17,4 @@ Installation
 
 You probably shouldn't use this yet, as I haven't had a chance to test it much. Do what you will.
 
+![screenshot of my command prompt](https://raw.github.com/christopherscott/dotfiles/master/screenshot.png)
