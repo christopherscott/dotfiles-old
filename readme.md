@@ -17,5 +17,3 @@ Installation
 
 You probably shouldn't use this yet, as I haven't had a chance to test it much. Do what you will.
 
-testing
-testing
