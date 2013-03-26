@@ -47,3 +47,4 @@ git submodule update
 cd $HOME
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
