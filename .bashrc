@@ -43,3 +43,4 @@ git submodule update
 [ -r "${DOTFILES_HOME}/prompt.conf" ] && source "${DOTFILES_HOME}/prompt.conf"
 
 cd $HOME
+eval "$(rbenv init -)"
