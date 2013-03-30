@@ -1,0 +1,3 @@
+--type-set=js=.js,.json
+--type-set=inc=.inc,.include
+--type-set=web=.html,.txt,.inc,.css,.js

@@ -26,6 +26,8 @@ for file in "${DOTFILES_HOME}/"*.conf; do
   fi
 done
 
+[ -r "./git-completion.sh" ] && source "./git-completion.sh"
+
 # load these last, to give user ability to override/customize in private
 for file in ~/.{path,extras}; do
   [ -r "$file" ] && source "$file"
@@ -44,3 +46,4 @@ git submodule update
 
 cd $HOME
 eval "$(rbenv init -)"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
