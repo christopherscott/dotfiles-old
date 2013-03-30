@@ -45,5 +45,5 @@ git submodule update
 [ -r "${DOTFILES_HOME}/prompt.conf" ] && source "${DOTFILES_HOME}/prompt.conf"
 
 cd $HOME
-eval "$(rbenv init -)"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
