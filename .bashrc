@@ -44,6 +44,11 @@ git submodule update
 # load prompt last to ensure it isn't fucked with
 [ -r "${DOTFILES_HOME}/prompt.conf" ] && source "${DOTFILES_HOME}/prompt.conf"
 
-cd $HOME
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Postgres.app
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
+# RVM
+PATH=$PATH:$HOME/.rvm/bin
 eval "$(rbenv init -)"
+
+cd $HOME
