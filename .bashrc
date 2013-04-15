@@ -47,8 +47,4 @@ git submodule update
 # Postgres.app
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
-# RVM
-PATH=$PATH:$HOME/.rvm/bin
-eval "$(rbenv init -)"
-
 cd $HOME
